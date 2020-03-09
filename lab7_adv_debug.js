@@ -1,10 +1,10 @@
 var http = require('http')
-function processRecord(request, response){
+function processRecord(request, response) {
     var body = 'Node.JS Tutorial\n'
     var contentLength = body.length
-    response.writeHead(200,{
-        'Content-Length':contentLength,
-        'Content-Type':'text/plain'
+    response.writeHead(200, {
+        'Content-Length': contentLength,
+        'Content-Type': 'text/plain'
     })
     response.end(body)
 }
